@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Abdullah Mohsin Resume</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 20px; 
+            background-color: #f0f2f5; 
+            color: #2c3e50; 
+            line-height: 1.6; 
+        }
+        .page-title { 
+            font-variant: small-caps; 
+            color: #1a365d; 
+            margin: 0; 
+            text-align: center; 
+            font-size: 2.2em; 
+            letter-spacing: 2px;
+        }
+        .resume-header { 
+            background: #ffffff;
+            border-top: 5px solid #1a365d; 
+            border-bottom: 5px solid #1a365d; 
+            padding: 20px 0; 
+            text-align: center; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-radius: 4px;
+        }
+        .main-container { 
+            display: flex; 
+            margin-top: 25px; 
+            gap: 30px; 
+        }
+        .content-area { 
+            flex: 2; 
+            background: #ffffff; 
+            padding: 30px; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .sidebar-area { 
+            flex: 1; 
+            background: #ffffff; 
+            padding: 25px; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            height: fit-content;
+        }
+        h2 { 
+            color: #1a365d; 
+            border-bottom: 2px solid #e2e8f0; 
+            padding-bottom: 8px; 
+            margin-top: 0;
+            font-size: 1.3em;
+        }
+        ul { padding-left: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid #cbd5e1; padding: 10px; text-align: left; font-size: 14px; }
+        th { background-color: #f8fafc; color: #1a365d; }
+        .highlight { font-weight: bold; color: #1a365d; }
+        .profile-img {
+            width: 100%;
+            max-height: 220px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            border: 2px solid #e2e8f0;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header-div" class="resume-header">
+        <h1 id="main-heading" class="page-title">Mr. Abdullah Mohsin</h1>
+    </div>
+
+    <div id="wrapper-div" class="main-container">
+        
+        <!-- Left Content Area -->
+        <div id="content-div" class="content-area">
+            <span id="bio-span">
+                <h2>Short Biography</h2>
+                <p>Hello! I am <span class="highlight">Abdullah Mohsin</span> from Karachi, Pakistan. Currently pursuing a B.Tech (Software) at UIT University with a strong passion for web development, networking fundamentals, and healthcare technology.</p>
+            </span>
+
+            <span id="edu-span">
+                <h2>Education & Training</h2>
+                <ul>
+                    <li><strong>B.Tech (Software)</strong> - UIT University, Karachi (Ongoing)</li>
+                    <li><strong>Networking & Infrastructure Training</strong> - Focused on IANA, RIRs, and ISP architecture.</li>
+                </ul>
+            </span>
+
+            <span id="networking-span">
+                <h2>Networking Core: IANA, RIR & ISP</h2>
+                <p>Understanding global internet governance and IP allocation is crucial for modern software systems:</p>
+                <ul>
+                    <li><strong>IANA (Internet Assigned Numbers Authority):</strong> Manages the global coordination of the DNS root, IP addressing, and other internet protocol resources.</li>
+                    <li><strong>RIR (Regional Internet Registry):</strong> Allocates IP addresses and ASNs regionally (e.g., APNIC for Asia-Pacific).</li>
+                    <li><strong>ISP (Internet Service Provider):</strong> Connects end-users to the global internet backbone using allocations from RIRs.</li>
+                </ul>
+            </span>
+
+            <span id="project-span">
+                <h2>Major Projects</h2>
+                <p>Played a major role in a specialized <strong>Medical Research Project</strong> for <span class="highlight">DVT (Deep Vein Thrombosis) Diagnosis</span>, developing data processing tools to assist clinical evaluation.</p>
+            </span>
+
+            <span id="skills-span">
+                <h2>Skills</h2>
+                <table>
+                    <tr>
+                        <th>Category</th>
+                        <th>Skills</th>
+                    </tr>
+                    <tr>
+                        <td>Hard Skills</td>
+                        <td>HTML, CSS, JavaScript, Node.js, SQL, Networking Concepts (IANA/ISP)</td>
+                    </tr>
+                    <tr>
+                        <td>Soft Skills</td>
+                        <td>Problem-Solving, Teamwork, Adaptability, Communication</td>
+                    </tr>
+                </table>
+            </span>
+
+            <span id="form-span">
+                <h2>Quick Inquiry Form</h2>
+                <form action="#" method="POST">
+                    <label for="fname">Your Name:</label><br>
+                    <input type="text" id="fname" name="fname" style="width:100%; padding:8px; margin-top:5px; border:1px solid #cbd5e1; border-radius:4px;"><br><br>
+                    <label for="fmsg">Message:</label><br>
+                    <textarea id="fmsg" name="fmsg" rows="3" style="width:100%; padding:8px; margin-top:5px; border:1px solid #cbd5e1; border-radius:4px;"></textarea><br><br>
+                    <button type="submit" style="padding: 8px 16px; background: #1a365d; color: white; border: none; border-radius: 4px; cursor: pointer;">Send</button>
+                </form>
+            </span>
+        </div>
+
+        <!-- Right Sidebar Area -->
+        <div id="sidebar-div" class="sidebar-area">
+            <span id="image-span">
+                <h2>Profile Image</h2>
+                <img src="data:image/jpeg;base64,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" alt="Profile Picture" class="profile-img">
+            </span>
+
+            <span id="contact-span">
+                <h2>Contact Info</h2>
+                <p><strong>Location:</strong> Karachi, Pakistan</p>
+                <p><strong>Email:</strong> <a href="mail:abdullahune@gmail.com" style="color:#1a365d;">abdullahune.com</a></p>
+                <p><strong>Phone:</strong> +92 3327978394 </p>
+            </span>
+
+            <span id="links-span">
+                <h2>Useful Links</h2>
+                <ul>
+                    <li><a href="https://www.iana.org" target="_blank" style="color:#1a365d;">IANA Official Site</a></li>
+                    <li><a href="https://www.apnic.net" target="_blank" style="color:#1a365d;">APNIC (RIR)</a></li>
+                    <li><a href="https://github.com" target="_blank" style="color:#1a365d;">GitHub Profile</a></li>
+                </ul>
+            </span>
+        </div>
+
+    </div>
+</body>
+</html>

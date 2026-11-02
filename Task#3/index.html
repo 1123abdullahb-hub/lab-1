@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM and BOM</title>
+</head>
+
+<body>
+
+    <h1 id="heading">My Heading</h1>
+    <p id="text">My Paragraph</p>
+
+    <button onclick="changeText()">Change Text</button>
+    <button onclick="changeColor()">Change Color</button>
+    <button onclick="showDate()">Show Date</button>
+
+    <br><br>
+
+    <button onclick="openWindow()">Open Google</button>
+    <button onclick="closeWindow()">Close Window</button>
+    <button onclick="showInfo()">Browser Info</button>
+    <button onclick="goBack()">Back</button>
+    <button onclick="goForward()">Forward</button>
+
+    <script>
+        function changeText() {
+            document.getElementById("heading").innerHTML = "Hello Students";
+            document.getElementById("text").innerHTML = "Text Changed!";
+        }
+        
+        function changeColor() {
+            document.body.style.backgroundColor = "lightblue";
+        }
+        
+        function showDate() {
+            document.getElementById("text").innerHTML = new Date();
+        }
+        
+        var myWindow;
+        
+        function openWindow() {
+            myWindow = window.open("https://www.google.com", "_blank");
+        }
+        
+        function closeWindow() {
+            if (myWindow && !myWindow.closed) {
+                myWindow.close();
+            } else {
+                alert("First open Google using Open Google button.");
+            }
+        }
+        
+        function showInfo() {
+            document.getElementById("text").innerHTML =
+                "Width: " + screen.width +
+                "<br>Height: " + screen.height +
+                "<br>Browser: " + navigator.userAgent;
+        }
+        
+        /* Back button */
+        function goBack() {
+            window.location.href =
+                "https://my.clevelandclinic.org/health/diagnostics/23556-fractional-flow-reserve";
+        }
+        
+        /* Forward button */
+        function goForward() {
+            window.location.href = "https://www.google.com";
+        }
+        </script>
+        
+
+</body>
+</html>
